@@ -65,7 +65,7 @@ def rotate(target,timeout):
         error = u.minError(target,(scaled))
         dir = -u.dirToSpin(target,(scaled))
         vel = error*kp*dir
-        odomStep(vel,-vel)
+        odomStep(vel,-vel) 
         time.sleep(0.01) 
 
 #purePursuit/movement code
